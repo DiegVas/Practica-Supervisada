@@ -1,0 +1,85 @@
+.Navegacion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #181818;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    
+}
+.Navegacion img{
+    padding: 5px;
+    display: flex;
+    width: 20%;
+    text-align: center;
+    align-items: center;
+}
+.Menu {
+    list-style: none;
+    padding: 0;
+    margin: auto;
+    width: 100%;
+    max-width: 100%;  
+}
+.Menu li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    display: block;
+}
+.Menu li {
+    display: inline-block;
+    text-align: center;
+    width: 100px;
+    font-size: 100%;
+}
+.Menu li a:hover {
+    background: cadetblue;
+}
+
+@media (max-width:700px) {
+    .Navegacion {
+        flex-direction: column;
+    }
+    .Menu { text-align: center;}
+    .Menu li a {
+       
+        padding: 15px;
+        
+    }
+    .Navegacion img{
+        width: 80%;
+    }
+}
+.Galeria {
+    padding-top: 10rem;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    
+}
+.Producto {
+    color: black;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+    padding: 1rem;
+    margin: 2rem;
+    float: left;
+    text-align: center;
+}
+.Producto img{
+    width: 50%;
+}
+.Producto h1 {
+    font-size: 80%;
+    padding: 10px;
+}
+.Producto p {
+    font-size: 100%;
+    padding: 10px;
+
+}
